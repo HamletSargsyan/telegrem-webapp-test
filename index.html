@@ -14,12 +14,18 @@
     <div id="app">
         <p>Text</p>
         <p class="hint">Hello World</p>
+        <button class="button" id="change-color-button">Change color</button>
     </div>
 
     <script>
         const tg = window.Telegram.WebApp;
 
         tg.expand();
+
+        let change_color_button = document.getElementById("change-color-button");
+        change_color_button.addEventListener('click', function() {
+            tg.themeParams.bg_color = "#B0D7FF";
+        });
     </script>
 </body>
 
