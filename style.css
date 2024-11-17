@@ -15,7 +15,7 @@ body {
     color: var(--tg-theme-link-color);
 }
 
-.button {
+.btn {
     display: inline-block;
     padding: 10px 20px;
     font-size: 16px;
@@ -31,17 +31,17 @@ body {
     text-decoration: none;
 }
 
-.button:active {
+.btn:active {
     background-color: #f2f2f2;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
 }
 
-.button:focus {
+.btn:focus {
     outline: none;
     box-shadow: 0 0 0 2px rgba(0, 122, 255, 0.3);
 }
 
-.button:not(:last-child) {
+.btn:not(:last-child) {
     margin-bottom: 15px
 }
 
