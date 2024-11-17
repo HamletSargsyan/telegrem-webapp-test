@@ -4,7 +4,12 @@ import os
 from pprint import pprint
 
 import telebot
-from telebot.types import Message, WebAppInfo, InlineKeyboardMarkup, InlineKeyboardButton, ReplyKeyboardMarkup, KeyboardButton
+from telebot.types import (
+    Message,
+    WebAppInfo,
+    InlineKeyboardMarkup,
+    InlineKeyboardButton,
+)
 from telebot.util import content_type_media
 
 from dotenv import load_dotenv
@@ -27,16 +32,13 @@ def start(message: Message):
         )
     )
 
-    bot.send_message(
-        message.chat.id,
-        "Hello World",
-        reply_markup=reply_markup
-    )
-    
+    bot.send_message(message.chat.id, "Hello World", reply_markup=reply_markup)
+
 
 @bot.message_handler(content_types=content_type_media)
 def log_message(message: Message):
     pprint(message.json, indent=4)
+
 
 def main():
     telebot.logger.setLevel(logging.INFO)

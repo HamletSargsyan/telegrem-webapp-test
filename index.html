@@ -1,11 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title></title>
+    <script src="https://telegram.org/js/telegram-web-app.js?56"></script>
+    <link rel="stylesheet" href="style.css">
 </head>
+
+
 <body>
-    
+    <div id="app">
+        <div class="hint">Hello World</div>
+    </div>
+
+    <script>
+        const tg = window.Telegram.WebApp;
+
+        tg.expand();
+    </script>
 </body>
+
 </html>
