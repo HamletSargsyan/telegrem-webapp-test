@@ -22,7 +22,7 @@ def start(message: Message):
         InlineKeyboardButton(
             "Web App",
             web_app=WebAppInfo(
-                url="https://hamletsargsyan.github.io/telegram-web-app-bot-example/index.html"
+                url="https://hamletsargsyan.github.io/telegrem-webapp-test/"
             ),
         )
     )
