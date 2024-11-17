@@ -18,14 +18,12 @@ body {
 .button {
     background: var(--tg-theme-button-color);
     color: var(--tg-theme-button-text-color);
-    font-size: 18px;
     border: none;
-    border-radius: 10%;
-    padding: 10%;
+    font-size: 20px;
 }
 
 .button:not(:last-child) {
-    margin-bottom: 20px
+    margin-bottom: 15px
 }
 
 #app {

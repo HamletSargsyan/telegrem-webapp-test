@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title></title>
-    <script src="https://telegram.org/js/telegram-web-app.js?56"></script>
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -21,6 +21,7 @@
         const tg = window.Telegram.WebApp;
 
         tg.expand();
+        tg.setText("buy");
 
         let change_color_button = document.getElementById("change-color-button");
         change_color_button.addEventListener('click', function() {
