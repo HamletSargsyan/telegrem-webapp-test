@@ -17,6 +17,7 @@
         <div class="btn" id="change-color-button">Change color</div>
     </div>
 
+
     <script>
         const tg = window.Telegram.WebApp;
 
@@ -25,7 +26,9 @@
         let change_color_button = document.getElementById("change-color-button");
         change_color_button.addEventListener('click', function() {
             tg.themeParams.bg_color = "#B0D7FF";
-            tg.showAlert("Done")
+            tg.showAlert("1")
+            tg.reload();
+            tg.showAlert("2")
         });
     </script>
 </body>
